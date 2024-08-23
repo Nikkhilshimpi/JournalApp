@@ -1,0 +1,18 @@
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+        security: DEBUG
+server:
+  port: 9191
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://localhost:27017/testDb
+  main:
+    allow-circular-references: true
